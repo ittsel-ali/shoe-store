@@ -58,7 +58,7 @@ Run the following to start tapping into the inventory events.
 ruby inventory.rb
 ```
 
-You now have an active connection to their stores opened on port 8080.
+You now have an active connection to their stores opened on port 9092.
 
 ### Start listening on each event
 
@@ -70,17 +70,6 @@ They all work the same way. Provide a method or a block to be executed whenever 
 
 Here are two examples for our favorite languages:
 
-#### Javascript
-
-Open a console on a non-secured page:
-
-```
-var ws = new WebSocket('ws://localhost:8080/');
-
-ws.onmessage = function(event) {
-  console.log(event.data);
-};
-```
 
 #### Ruby
 
