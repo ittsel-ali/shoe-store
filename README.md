@@ -55,7 +55,7 @@ You can run it directly from your own machine.
 Run the following to start tapping into the inventory events.
 
 ```
-(bin/)websocketd --port=8080 ruby inventory.rb
+ruby inventory.rb
 ```
 
 You now have an active connection to their stores opened on port 8080.
@@ -87,22 +87,6 @@ ws.onmessage = function(event) {
 ##### Installation
 
 ```
-gem install faye-websocket
-gem install eventmachine
+gem install ruby-kafka
 ```
 
-##### Example
-
-```
-require 'faye/websocket'
-require 'eventmachine'
-require 'json'
-
-EM.run {
-  ws = Faye::WebSocket::Client.new('ws://localhost:8080/')
-
-  ws.on :message do |event|
-    p JSON.parse(event.data)
-  end
-}
-```
