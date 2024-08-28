@@ -36,13 +36,15 @@ Happy Hacking :)
 
 ## Installation
 
-This projects uses the popular library `websocketd` to send messages.
+Just run following commands:
 
-If you're on a Mac, you can install `websocketd` using [Homebrew](http://brew.sh/). Just run `brew install websocketd`. For other operating systems, or if you don't want to use Homebrew, check out the link below.
+`brew install zookeeper`
 
-**[Download for Linux, OS X and Windows](https://github.com/joewalnes/websocketd/wiki/Download-and-install)**
+`brew install kafka`
+ 
+`brew services start zookeeper`
 
-Note that a Ubuntu 64-bit version is already bundled here `bin/websocketd` for convenience.
+`brew services start kafka`
 
 ## Getting Started
 
